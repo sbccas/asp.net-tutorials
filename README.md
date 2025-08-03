@@ -70,6 +70,8 @@ Reference reading for better understanding:
 ## Contributing
 Please follow our [contribution guidelines](README.md) to contribute new tutorials or correct any content.
 
-<img src="https://github.com/sbccas/aspnet-tutorials/blob/main/resources/Banner.png" alt="ASP.NET Tutorial Banner" width="Auto" height="Auto">
+<img src="https://github.com/sbccas/asp.net-tutorials/blob/main/resources/Banner.png" alt="ASP.NET Tutorial Banner" width="Auto" height="Auto">
+
+
 
 Happy coding! We hope this helps you master ASP.NET and build powerful web applications.
