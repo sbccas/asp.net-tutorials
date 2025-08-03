@@ -1,5 +1,5 @@
 # ASP.NET Tutorials
-### ASP.NET Tutorials based on BCA Semester 4 Subject 404 - Web Application Development Using ASP.NET
+### ASP.NET Tutorials based on BCA Semester 5 Subject 505 - ASP.NET Technologies (Web Application Development Using ASP.NET)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/sbccas/aspnet-tutorials.svg)](https://github.com/sbccas/aspnet-tutorials/stargazers)
@@ -24,7 +24,7 @@ Welcome to the ASP.NET Tutorials repository! This is a complete resource for lea
 
 If you're new to ASP.NET, begin here:
 
-- [Learn about Syllabus](1_Syllabus/404_ASPNET_Syllabus.pdf)
+- [Learn about Syllabus](1_Syllabus/505_ASP.NET_Syllabus_2025-26.pdf)
 - [Setting Up Visual Studio](1_Syllabus/setup.md)
 - [Hello ASP.NET Web Form](3_Programs/HelloWebForm.aspx)
 
@@ -32,11 +32,11 @@ If you're new to ASP.NET, begin here:
 
 Understand ASP.NET fundamentals with these units:
 
-- [UNIT-1: Introduction to Web Forms](2_Notes/404_Unit_1.pdf)
-- [UNIT-2: Server Controls and Validation](2_Notes/404_Unit_2.pdf)
-- [UNIT-3: Database Connectivity (ADO.NET)](2_Notes/404_Unit_3.pdf)
-- [UNIT-4: State Management](2_Notes/404_Unit_4.pdf)
-- [UNIT-5: Web Deployment](2_Notes/404_Unit_5.pdf)
+- [UNIT-1: Introduction to Web Forms](2_Notes/505_ASP_NET_Unit_1.pdf)
+- [UNIT-2: Server Controls and Validation](2_Notes/505_ASP_NET_Unit_2.pdf)
+- [UNIT-3: Database Connectivity (ADO.NET)](2_Notes/505_ASP_NET_Unit_3.pdf)
+- [UNIT-4: State Management](2_Notes/505_ASP_NET_Unit_2.pdf)
+- [UNIT-5: Web Deployment](2_Notes/505_ASP_NET_Unit_3.pdf)
 
 ## Sample Programs
 
