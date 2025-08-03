@@ -2,11 +2,11 @@
 ### ASP.NET Tutorials based on BCA Semester 5 Subject 505 - ASP.NET Technologies (Web Application Development Using ASP.NET)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/sbccas/aspnet-tutorials.svg)](https://github.com/sbccas/aspnet-tutorials/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/sbccas/aspnet-tutorials.svg)](https://github.com/sbccas/aspnet-tutorials/network)
-[![GitHub issues](https://img.shields.io/github/issues/sbccas/aspnet-tutorials.svg)](https://github.com/sbccas/aspnet-tutorials/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/sbccas/aspnet-tutorials.svg)](https://github.com/sbccas/aspnet-tutorials/pulls)
-[![GitHub contributors](https://img.shields.io/github/contributors/sbccas/aspnet-tutorials.svg)](https://github.com/sbccas/aspnet-tutorials/graphs/contributors)
+[![GitHub stars](https://img.shields.io/github/stars/sbccas/asp.net-tutorials.svg)](https://github.com/sbccas/asp.net-tutorials/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/sbccas/asp.net-tutorials.svg)](https://github.com/sbccas/asp.net-tutorials/network)
+[![GitHub issues](https://img.shields.io/github/issues/sbccas/asp.net-tutorials.svg)](https://github.com/sbccas/asp.net-tutorials/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/sbccas/asp.net-tutorials.svg)](https://github.com/sbccas/asp.net-tutorials/pulls)
+[![GitHub contributors](https://img.shields.io/github/contributors/sbccas/asp.net-tutorials.svg)](https://github.com/sbccas/asp.net-tutorials/graphs/contributors)
 
 Welcome to the ASP.NET Tutorials repository! This is a complete resource for learning ASP.NET using Web Forms, covering core concepts, server controls, database access with ADO.NET, and real-world sample projects. Ideal for students preparing for practicals and exams.
 
@@ -50,15 +50,15 @@ Explore ASP.NET programs with source code:
 
 Hands-on assignment sheets and practical tasks:
 
-- [Assignment Sheet](4_Assignments/404_ASPNET_Assignment.pdf)
-- [Mini Project Ideas](4_Assignments/404_ASPNET_Projects.pdf)
+- [Assignment Sheet](4_Assignments/ASP.NET_ASS_II_2018_19.pdf)
+- [Mini Project Ideas](4_Assignments/505_ASPNET_Projects.pdf)
 
 ## Question Bank
 
 Prepare with important questions and MCQs:
 
-- [Theory & Practical Questions](5_QuestionBank/404_ASPNET_Questions.pdf)
-- [MCQs](5_QuestionBank/404_ASPNET_MCQs.pdf)
+- [Theory & Practical Questions](5_QuestionBank/505_ASPNET_Questions.pdf)
+- [MCQs](5_QuestionBank/505_ASPNET_MCQs.pdf)
 
 ## eBooks
 
