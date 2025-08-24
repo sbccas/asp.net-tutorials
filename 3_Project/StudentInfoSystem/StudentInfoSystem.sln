@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "StudentInfoSystem", ".", "{43B9A745-518D-4245-90EE-E92DF1B8561B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/StudentInfoSystem"
+		Debug.AspNetCompiler.PhysicalPath = "..\StudentInfoSystem\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\StudentInfoSystem\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/StudentInfoSystem"
+		Release.AspNetCompiler.PhysicalPath = "..\StudentInfoSystem\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\StudentInfoSystem\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "48891"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43B9A745-518D-4245-90EE-E92DF1B8561B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B9A745-518D-4245-90EE-E92DF1B8561B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
