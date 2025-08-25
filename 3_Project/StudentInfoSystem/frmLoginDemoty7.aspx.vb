@@ -4,22 +4,19 @@ Partial Class frmLoginDemoty9
 
     Protected Sub btnLogin_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnLogin.Click
         Dim cn As New SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings("ty7").ConnectionString)
-        Dim cmd As New SqlCommand("select * from studentinfo where username='" & txtUsername.Text & "' and password='" & txtPassword.Text & "';", cn)
+        Dim cmd As New SqlCommand("select * from studentinfo where username='" & txtUsername.Text & "' and password='" & txtPassword.Text & "'", cn)
         Dim da As New SqlDataAdapter(cmd)
         Dim ds As New DataSet
-        da.Fill(ds, "ty7charaja")
-
+        da.Fill(ds)
         If ds.Tables(0).Rows.Count > 0 Then
-            'Label1.Text = "WELCOME DEAR STUDENT"
             Session("sid") = ds.Tables(0).Rows(0).Item(0).ToString
-            Label1.Text = ds.Tables(0).Rows(0).Item(0).ToString
-            'Response.Redirect("frmUpdateProfileDemoTY7.aspx")
+            Response.Redirect("frmUpdateProfileDemoTY7.aspx")
+
         Else
-            Label1.Text = "USERNAME OR PASSWORD INCORRECT"
+            Label1.Text = "USERNAME OF PASSWORD INCORRECT"
         End If
 
-        GridView1.DataSource = ds.Tables("ty7charaja")
-        GridView1.DataBind()
+
         
     End Sub
 End Class

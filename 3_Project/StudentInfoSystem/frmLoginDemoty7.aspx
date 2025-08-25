@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="frmLoginDemoty9.aspx.vb" Inherits="frmLoginDemoty9" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="frmLoginDemoty7.aspx.vb" Inherits="frmLoginDemoty9" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -68,16 +68,13 @@
         <div class="row" style="text-align:center;">
             <asp:Button ID="btnLogin" runat="server" Text="Login" />
             <asp:Button ID="Button1" runat="server" Text="Cancel" />
-            <asp:Label ID="Label1" runat="server" Font-Bold="True" ForeColor="#FF3300"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </div>
 
         <div class="links">
             <asp:HyperLink ID="lnkRegister" runat="server" NavigateUrl="Register.aspx">Register</asp:HyperLink> | 
             <asp:HyperLink ID="lnkForgot" runat="server" NavigateUrl="ForgotPassword.aspx">Forgot Password?</asp:HyperLink>
-
         </div>
-        <asp:GridView ID="GridView1" runat="server">
-        </asp:GridView>
     </div>
     </form>
 </body>
