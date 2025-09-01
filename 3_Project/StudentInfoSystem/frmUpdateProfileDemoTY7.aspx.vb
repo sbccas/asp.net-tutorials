@@ -6,8 +6,8 @@ Partial Class frmUpdateProfileDemoTY7
 
     Protected Sub btnUpdate_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnUpdate.Click
         Dim cn As New SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings("ty7").ConnectionString)
-        Dim insquery As String = "insert into studentinfo values('" & txtStudentName.Text & "','" & txtMobile.Text & "','" & txtEmail.Text & "','" & txtCity.Text & "','" & txtUsername.Text & "','" & txtPassword.Text & "','')"
-        Dim cmd As New SqlCommand(insquery, cn)
+        Dim updquery As String = "update studentinfo set sname='" & txtStudentName.Text & "',smobile='" & txtMobile.Text & "',semail='" & txtEmail.Text & "',scity='" & txtCity.Text & "',username='" & txtUsername.Text & "',password='" & txtPassword.Text & "' where sid=" & Session("sid")
+        Dim cmd As New SqlCommand(updquery, cn)
         cn.Open()
         Dim cou As Integer = 0
         cou = cmd.ExecuteNonQuery
@@ -21,9 +21,7 @@ Partial Class frmUpdateProfileDemoTY7
 
    
     Protected Sub frmUpdateProfileDemoTY7_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        If Session("sid") = "" Then
-            Response.Redirect("frmLoginDemoty7.aspx")
-        Else
+        If Not Page.IsPostBack Then
             Dim cn As New SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings("ty7").ConnectionString)
             Dim cmd As New SqlCommand("select * from studentinfo where sid=" & Session("sid") & ";", cn)
             Dim da As New SqlDataAdapter(cmd)
@@ -36,6 +34,10 @@ Partial Class frmUpdateProfileDemoTY7
             txtCity.Text = ds.Tables(0).Rows(0).Item(4).ToString
 
 
+        Else
+
+
         End If
+
     End Sub
 End Class

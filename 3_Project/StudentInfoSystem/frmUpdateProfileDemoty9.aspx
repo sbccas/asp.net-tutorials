@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="frmUpdateProfileDemoty9.aspx.vb" Inherits="registrationDemoty9" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="frmUpdateProfileDemoty9.aspx.vb" Inherits="updateProfileDemoty9" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -96,9 +96,6 @@
         <td>
             <asp:RequiredFieldValidator ID="rfvtxtmobile" runat="server" 
                 ErrorMessage="Mobile Required" ControlToValidate="txtMobile">*</asp:RequiredFieldValidator>
-            <asp:RangeValidator ID="RangeValidator1" runat="server" 
-                ControlToValidate="txtMobile" ErrorMessage="GO AND DRINK BOURNVITA" 
-                MaximumValue="100" MinimumValue="18" Type="Integer"></asp:RangeValidator>
         </td>
     </tr>
 

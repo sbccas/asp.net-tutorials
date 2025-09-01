@@ -1,8 +1,4 @@
-﻿
-
-
-
-Partial Class registrationDemoty9
+﻿Partial Class registrationDemoty9
     Inherits System.Web.UI.Page
 
     Protected Sub btnRegister_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnRegister.Click

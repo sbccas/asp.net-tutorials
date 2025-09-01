@@ -2,14 +2,13 @@
 
 
 
-Partial Class registrationDemoty9
+Partial Class updateProfileDemoty9
     Inherits System.Web.UI.Page
 
     Protected Sub btnUpdate_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnUpdate.Click
         Dim cn As New SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings("ty9").ConnectionString)
-        Dim insquery As String = "insert into studentinfo values('" & _
-        "" & txtStudentName.Text & "','" & txtMobile.Text & "','" & txtEmail.Text & "','" & txtCity.Text & "','" & txtUsername.Text & "','" & txtPassword.Text & "')"
-        Dim cmd As New SqlCommand(insquery, cn)
+        Dim updquery As String = "update studentinfo set sname='" & txtStudentName.Text & "', semail='" & txtEmail.Text & "',smobile='" & txtMobile.Text & "',scity='" & txtCity.Text & "',username='" & txtUsername.Text & "',password='" & txtPassword.Text & "' where sid=" & Session("sid")
+        Dim cmd As New SqlCommand(updquery, cn)
         cn.Open()
         Dim cou As Integer = 0
         cou = cmd.ExecuteNonQuery()
@@ -24,10 +23,7 @@ Partial Class registrationDemoty9
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
-        'WATCHMAN CODE
-        If Session("sid") = "" Then
-            Response.Redirect("frmLoginDemoty9.aspx")
-        Else
+        If Not Page.IsPostBack Then
             Dim cn As New SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings("ty9").ConnectionString)
             Dim cmd As New SqlCommand("select * from studentinfo where sid=" & Session("sid") & ";", cn)
             Dim da As New SqlDataAdapter(cmd)
@@ -44,8 +40,12 @@ Partial Class registrationDemoty9
             Else
                 Label1.Text = "NO DETAILS FOUND"
             End If
+        Else
 
         End If
+        
+
+
 
 
 
