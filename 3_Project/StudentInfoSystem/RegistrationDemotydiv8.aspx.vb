@@ -19,7 +19,6 @@ Partial Class RegistrationDemotydiv8
 
     End Sub
 
-    Protected Sub txtUsername_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtUsername.TextChanged
 
-    End Sub
+
 End Class

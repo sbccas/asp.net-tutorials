@@ -1,10 +1,9 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="registrationDemoty9.aspx.vb" Inherits="registrationDemoty9" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="frmUpdateProfileDemoty8.aspx.vb" Inherits="frmUpdateProfileDemoty8" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
+<head id="Head1" runat="server">
     <style>
         table {
             border-collapse: collapse;
@@ -28,17 +27,15 @@
             width: 30%;
             color: red;
         }
-        .style4
-        {
-            height: 38px;
-        }
-    </style>
+        </style>
+
+    <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-    <h1>REGISTRATION PAGE FOR TYBCA DIV 9 </h1>
-      <table>
+     <h1 style="direction: ltr">Update Profile PAGE DEMO FOR TYBCA DIV 8 </h1>
+    <table>
     <tr>
         <td colspan="3">
             <asp:Label ID="lblTitle" runat="server" Text="PLEASE ENTER YOUR REGISTRATION DETAILS"></asp:Label>
@@ -131,13 +128,13 @@
         </td>
     </tr>
     <tr>
-        <td class="style4">
+        <td>
             <asp:Label ID="Label1" runat="server" Text="Confirm Password"></asp:Label>
         </td>
-        <td class="style4">
+        <td>
             <asp:TextBox ID="txtconfirmpassword" runat="server" TextMode="Password"></asp:TextBox>
         </td>
-        <td class="style4">
+        <td>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                 ErrorMessage="Password Required" ControlToValidate="txtPassword">*</asp:RequiredFieldValidator>
             <asp:CompareValidator ID="CompareValidator1" runat="server" 
@@ -148,11 +145,9 @@
 
     <tr>
         <td colspan="3">
-            <asp:Button ID="btnRegister" runat="server" Text="Register" />
+            <asp:Button ID="btnUpdate" runat="server" Text="Update" />
             <asp:Button ID="btnCancel" runat="server" Text="Cancel" />
             <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-            <asp:HyperLink ID="HyperLink1" runat="server" 
-                NavigateUrl="~/frmGridViewDemoTY9.aspx">GO TO RECORDS</asp:HyperLink>
         </td>
     </tr>
     <tr>
@@ -165,5 +160,4 @@
 </table>
     </div>
     </form>
-</body>
-</html>
+</body></html>
