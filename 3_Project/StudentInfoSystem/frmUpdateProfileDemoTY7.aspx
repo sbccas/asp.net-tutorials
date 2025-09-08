@@ -123,7 +123,10 @@
     </tr>
     <tr>
         <td colspan="3">
-            <asp:Button ID="btnUpdate" runat="server" Text="Update Profile" />
+            <asp:Button ID="btnUpdate" runat="server" Text="Update Profile" 
+                style="height: 26px" />
+                  <asp:Button ID="btnDelete" runat="server" Text="Delete Profile" 
+                style="height: 26px" />
             <asp:Button ID="btnCancel" runat="server" Text="Cancel" />
             <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
         </td>
