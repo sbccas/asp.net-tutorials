@@ -8,7 +8,7 @@ Partial Class frmUpdateProfileDemoty8
             Response.Redirect("frmLoginDemoty8.aspx")
         Else
             If Not Page.IsPostBack Then
-                Dim cn As New SqlConnection("Data Source=.\SQLEXPRESS;AttachDbFilename=E:\TYBCA2025-26\StudentInfoSystem\App_Data\Database.mdf;Integrated Security=True;User Instance=True")
+                Dim cn As New SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings("ty8").ConnectionString)
                 Dim cmd As New SqlCommand("select * from studentinfo where sid=" & Session("sid") & ";", cn)
                 Dim da As New SqlDataAdapter(cmd)
                 Dim ds As New DataSet
@@ -41,5 +41,26 @@ Partial Class frmUpdateProfileDemoty8
         Else
             Label2.Text = "Update Error"
         End If
+    End Sub
+
+    Protected Sub btnDelete_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnDelete.Click
+        Dim cn As New SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings("ty8").ConnectionString)
+        Dim delquery As String = "delete from studentinfo where sid=" & Session("sid")
+        Dim cmd As New SqlCommand(delquery, cn)
+        cn.Open()
+        Dim cou As Integer = 0
+        cou = cmd.ExecuteNonQuery
+        cn.Close()
+        If cou > 0 Then
+            Label2.Text = "Delete Successful"
+            Session.Abandon()
+            Response.Redirect("frmLoginDemoty8.aspx")
+        Else
+            Label2.Text = "Delete Error"
+        End If
+    End Sub
+
+    Protected Sub LinkButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles LinkButton1.Click
+
     End Sub
 End Class

@@ -146,8 +146,11 @@
     <tr>
         <td colspan="3">
             <asp:Button ID="btnUpdate" runat="server" Text="Update" />
+            <asp:Button ID="btnDelete" runat="server" Text="Delete Profile" />
             <asp:Button ID="btnCancel" runat="server" Text="Cancel" />
             <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+            <asp:LinkButton ID="LinkButton1" runat="server" 
+                PostBackUrl="~/frmAdvanceGridViewDemoty8.aspx">Advanced Grid View</asp:LinkButton>
         </td>
     </tr>
     <tr>

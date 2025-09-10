@@ -7,11 +7,11 @@ Partial Class frmLoginDemoty9
         Dim cmd As New SqlCommand("select * from studentinfo where username='" & txtUsername.Text & "' and password='" & txtPassword.Text & "';", cn)
         Dim da As New SqlDataAdapter(cmd)
         Dim ds As New DataSet
-        da.Fill(ds, "hardcore")
+        da.Fill(ds)
 
         If ds.Tables(0).Rows.Count > 0 Then
             'Label1.Text = "WELCOME DEAR STUDENT"
-            Session("sid") = ds.Tables("hardcore").Rows(0).Item(0).ToString
+            Session("sid") = ds.Tables(0).Rows(0).Item(0).ToString
 
             Response.Redirect("frmUpdateProfileDemoty9.aspx")
         Else

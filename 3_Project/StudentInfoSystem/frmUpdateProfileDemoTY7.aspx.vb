@@ -53,8 +53,8 @@ Partial Class frmUpdateProfileDemoTY7
 
     Protected Sub btnDelete_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnDelete.Click
         Dim cn As New SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings("ty7").ConnectionString)
-        Dim updquery As String = "Delete from studentinfo where sid=" & Session("sid")
-        Dim cmd As New SqlCommand(updquery, cn)
+        Dim delquery As String = "Delete from studentinfo where sid=" & Session("sid")
+        Dim cmd As New SqlCommand(delquery, cn)
         cn.Open()
         Dim cou As Integer = 0
         cou = cmd.ExecuteNonQuery

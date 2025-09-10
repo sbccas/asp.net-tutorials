@@ -129,6 +129,7 @@
                 style="height: 26px" />
             <asp:Button ID="btnCancel" runat="server" Text="Cancel" />
             <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+            <asp:LinkButton ID="lnkbtnGrid" runat="server">ADVANCED GRID VIEW</asp:LinkButton>
         </td>
     </tr>
     <tr>
