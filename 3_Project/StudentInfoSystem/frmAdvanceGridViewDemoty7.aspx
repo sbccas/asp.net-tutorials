@@ -14,22 +14,26 @@
             AllowSorting="True" AutoGenerateColumns="False" BackColor="#DEBA84" 
             BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" 
             CellSpacing="2" DataKeyNames="sid" DataSourceID="SqlDataSource1" 
-            EnableModelValidation="True" style="margin-right: 0px">
+            EnableModelValidation="True" style="margin-right: 0px" ShowFooter="True">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" 
                     ShowSelectButton="True" />
-                <asp:BoundField DataField="sid" HeaderText="ROLL NO" InsertVisible="False" 
+                <asp:BoundField DataField="sid" HeaderText="sid" InsertVisible="False" 
                     ReadOnly="True" SortExpression="sid" />
-                <asp:BoundField DataField="sname" HeaderText="sname" SortExpression="sname" />
+                <asp:BoundField DataField="sname" HeaderText="sname" 
+                    SortExpression="sname" />
                 <asp:BoundField DataField="smobile" HeaderText="smobile" 
                     SortExpression="smobile" />
                 <asp:BoundField DataField="semail" HeaderText="semail" 
                     SortExpression="semail" />
-                <asp:BoundField DataField="scity" HeaderText="scity" SortExpression="scity" />
+                <asp:BoundField DataField="scity" HeaderText="scity" 
+                    SortExpression="scity" />
                 <asp:BoundField DataField="username" HeaderText="username" 
                     SortExpression="username" />
                 <asp:BoundField DataField="password" HeaderText="password" 
                     SortExpression="password" />
+                <asp:BoundField DataField="scourse" HeaderText="scourse" 
+                    SortExpression="scourse" />
             </Columns>
             <EmptyDataTemplate>
                 NO RECORDS . KINDLY INSERT RECORD
@@ -42,11 +46,12 @@
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConflictDetection="CompareAllValues" 
-            ConnectionString="<%$ ConnectionStrings:ty8 %>" 
+            ConnectionString="<%$ ConnectionStrings:ty7 %>" 
             DeleteCommand="DELETE FROM [studentinfo] WHERE [sid] = @original_sid AND (([sname] = @original_sname) OR ([sname] IS NULL AND @original_sname IS NULL)) AND (([smobile] = @original_smobile) OR ([smobile] IS NULL AND @original_smobile IS NULL)) AND (([semail] = @original_semail) OR ([semail] IS NULL AND @original_semail IS NULL)) AND (([scity] = @original_scity) OR ([scity] IS NULL AND @original_scity IS NULL)) AND (([username] = @original_username) OR ([username] IS NULL AND @original_username IS NULL)) AND (([password] = @original_password) OR ([password] IS NULL AND @original_password IS NULL))" 
             InsertCommand="INSERT INTO [studentinfo] ([sname], [smobile], [semail], [scity], [username], [password]) VALUES (@sname, @smobile, @semail, @scity, @username, @password)" 
             OldValuesParameterFormatString="original_{0}" 
             SelectCommand="SELECT * FROM [studentinfo]" 
+            
             UpdateCommand="UPDATE [studentinfo] SET [sname] = @sname, [smobile] = @smobile, [semail] = @semail, [scity] = @scity, [username] = @username, [password] = @password WHERE [sid] = @original_sid AND (([sname] = @original_sname) OR ([sname] IS NULL AND @original_sname IS NULL)) AND (([smobile] = @original_smobile) OR ([smobile] IS NULL AND @original_smobile IS NULL)) AND (([semail] = @original_semail) OR ([semail] IS NULL AND @original_semail IS NULL)) AND (([scity] = @original_scity) OR ([scity] IS NULL AND @original_scity IS NULL)) AND (([username] = @original_username) OR ([username] IS NULL AND @original_username IS NULL)) AND (([password] = @original_password) OR ([password] IS NULL AND @original_password IS NULL))">
             <DeleteParameters>
                 <asp:Parameter Name="original_sid" Type="Decimal" />
