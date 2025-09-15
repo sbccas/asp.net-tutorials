@@ -13,7 +13,41 @@
         <asp:DataList ID="DataList1" runat="server" BackColor="#DEBA84" 
             BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" 
             CellSpacing="2" DataKeyField="sid" DataSourceID="SqlDataSource1" 
-            GridLines="Both">
+            GridLines="Both" RepeatColumns="3" RepeatDirection="Horizontal" 
+            SelectedIndex="0">
+            <AlternatingItemTemplate>
+            <table border=5>
+            <tr>
+            <td>
+                scourse:
+                <asp:Label ID="scourseLabel" runat="server" Text='<%# Eval("scourse") %>' />
+                <br />
+                sid:
+                <asp:Label ID="sidLabel" runat="server" Text='<%# Eval("sid") %>' />
+                <br />
+                sname:
+                <asp:Label ID="snameLabel" runat="server" Text='<%# Eval("sname") %>' />
+                <br />
+                smobile:
+                <asp:Label ID="smobileLabel" runat="server" Text='<%# Eval("smobile") %>' />
+                <br />
+                semail:
+                <asp:Label ID="semailLabel" runat="server" Text='<%# Eval("semail") %>' />
+                <br />
+                scity:
+                <asp:Label ID="scityLabel" runat="server" Text='<%# Eval("scity") %>' />
+                <br />
+                username:
+                <asp:Label ID="usernameLabel" runat="server" Text='<%# Eval("username") %>' />
+                <br />
+                password:
+                <asp:Label ID="passwordLabel" runat="server" Text='<%# Eval("password") %>' />
+                <br />
+            </td>
+            </tr>
+            </table>
+            
+            </AlternatingItemTemplate>
             <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
             <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
             <ItemStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
@@ -46,6 +80,9 @@
                 <br />
             </ItemTemplate>
             <SelectedItemStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
+            <SeparatorTemplate>
+                THIS IS MY ADVERTISEMENT
+            </SeparatorTemplate>
         </asp:DataList>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:ty7 %>" 
