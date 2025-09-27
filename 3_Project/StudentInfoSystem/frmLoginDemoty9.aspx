@@ -1,9 +1,11 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="frmLoginDemoty9.aspx.vb" Inherits="frmLoginDemoty9" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="frmLoginDemoty9.aspx.vb" Inherits="frmLoginDemoty9" MasterPageFile="~/amroli.master" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+
+<asp:Content ID="Content1" runat="server" 
+    contentplaceholderid="ContentPlaceHolder1">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
         <title>Login Page Demo</title>
     <style type="text/css">
         body {
@@ -72,7 +74,7 @@
         </div>
 
         <div class="links">
-            <asp:HyperLink ID="lnkRegister" runat="server" NavigateUrl="Register.aspx">Register</asp:HyperLink> | 
+            <asp:HyperLink ID="lnkRegister" runat="server" NavigateUrl="~/registrationDemoty9.aspx">Register</asp:HyperLink> | 
             <asp:HyperLink ID="lnkForgot" runat="server" NavigateUrl="ForgotPassword.aspx">Forgot Password?</asp:HyperLink>
 
         </div>
@@ -83,3 +85,7 @@
 </body>
 
 </html>
+        </asp:Content>
+
+
+

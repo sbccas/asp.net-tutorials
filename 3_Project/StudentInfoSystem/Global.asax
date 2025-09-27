@@ -4,13 +4,13 @@
 
     Sub Application_Start(ByVal sender As Object, ByVal e As EventArgs)
         ' Code that runs on application startup
-        ' MsgBox("WELCOME TO MY WEBSITE")
+        MsgBox("WELCOME TO MY WEBSITE")
         Application("OnlineUsers") = 1000
     End Sub
     
     Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)
         ' Code that runs on application shutdown
-        'MsgBox("BYE BYE")
+        MsgBox("BYE BYE")
     End Sub
         
     Sub Application_Error(ByVal sender As Object, ByVal e As EventArgs)
@@ -19,8 +19,7 @@
 
     Sub Session_Start(ByVal sender As Object, ByVal e As EventArgs)
         ' Code that runs when a new session is started
-        'MsgBox("NEW USER ARRIVED")
-        
+        MsgBox("NEW USER ARRIVED")
         Application("OnlineUsers") = Int(Application("OnlineUsers")) + 1
     End Sub
 

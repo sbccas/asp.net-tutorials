@@ -3,6 +3,9 @@ Partial Class frmSessionDemoty9
     Inherits System.Web.UI.Page
 
     Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnSession.Click
+        Session("amroli") = 123
+        MsgBox(Application("OnlineUsers"))
+
         Session("Sname") = TextBox1.Text
         Session("ltime") = System.DateTime.Now.ToString
         Session.Add("Smobile", 9898989898)
