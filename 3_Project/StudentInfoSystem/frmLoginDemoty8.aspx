@@ -1,9 +1,13 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="frmLoginDemoty8.aspx.vb" Inherits="frmLoginDemoty8" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="frmLoginDemoty8.aspx.vb" Inherits="frmLoginDemoty8" MasterPageFile="~/tybca8masterdemo.master" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
+
+
+<asp:Content ID="Content1" runat="server" 
+    contentplaceholderid="ContentPlaceHolder1">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
     <title>Login Page</title>
     <style>
         body { font-family: Arial; background-color: #f7f7f7; }
@@ -59,3 +63,10 @@
     </form>
 </body>
 </html>
+
+            </asp:Content>
+
+
+
+
+
